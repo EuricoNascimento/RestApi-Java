@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping({"/spring-contact-mysql-j"})
+@RequestMapping({"/contact"})
 public class ContactController {
     private IContactRepository repository;
 
