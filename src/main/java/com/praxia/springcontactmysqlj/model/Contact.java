@@ -6,10 +6,11 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Entity
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
+@Entity
 public class Contact {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

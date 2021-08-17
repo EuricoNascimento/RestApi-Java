@@ -23,12 +23,13 @@ public class SpringContactMysqlJApplication {
 			LongStream.range(1, 11)
 					.mapToObj(i -> {
 						Contact c = new Contact();
-						c.setName("Contact " + i);
-						c.setEmail("contact" + i + "@email.com");
-						c.setPhone("(098) 98435-6584");
+						c.setName("Name: " + i);
+						c.setEmail("Email: " + i);
+						c.setPhone("Phone: " + i);
 						return c;
 					})
-					.map(v -> repository.save(v)).forEach(System.out::println);
+					.map(v -> repository.save(v))
+					.forEach(System.out::println);
 		};
 	}
 }
